@@ -1,0 +1,28 @@
+;
+; BIND data for armldap.local
+;
+$TTL	604800
+@	IN SOA	armldap.arkaitz.local. root.localhost. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 3600 )		; Negative Cache TTL
+;
+@	IN	NS	armldap.arkaitz.local.
+; Registros Host
+@	IN	A	192.168.3.205
+armused	IN	A	192.168.3.205
+armldap	IN	A	192.168.3.105
+
+; Registros Alias
+
+daw201	IN	CNAME	armused.arkaitz.local.
+daw202	IN	CNAME	armused.arkaitz.local.
+daw203	IN	CNAME	armused.arkaitz.local.
+daw204	IN	CNAME	armused.arkaitz.local.
+
+www.daw201	IN	CNAME	armused.arkaitz.local.
+www.daw202	IN	CNAME	armused.arkaitz.local.
+www.daw203	IN	CNAME	armused.arkaitz.local.
+www.daw204	IN	CNAME	armused.arkaitz.local.

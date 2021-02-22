@@ -1,0 +1,123 @@
+version: 1
+
+dn: dc=arkaitz,dc=local
+objectClass: dcObject
+objectClass: organization
+objectClass: top
+dc: arkaitz
+o: arkaitz
+
+dn: cn=admin,dc=arkaitz,dc=local
+objectClass: organizationalRole
+objectClass: simpleSecurityObject
+cn: admin
+userPassword:: e1NTSEF9TVVhOE13ZGlOdW5nRXBXZmlUYldxUVpFQ3BuZWFkYVY=
+description: LDAP administrator
+
+dn: ou=people,dc=arkaitz,dc=local
+objectClass: organizationalUnit
+ou: people
+
+dn: ou=groups,dc=arkaitz,dc=local
+objectClass: organizationalUnit
+ou: groups
+
+dn: uid=zipi,ou=groups,dc=arkaitz,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: zipi
+gidNumber: 2000
+homeDirectory: /home/zipi
+sn: zipi
+uid: zipi
+uidNumber: 2000
+loginShell: /bin/bash
+userPassword:: e1NTSEF9SzJnVS9yM1BuMUF1dWhVYTlMTzNYRnZjNEpUVmkyMmI=
+
+dn: uid=zape,ou=groups,dc=arkaitz,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+cn: zape
+gidNumber: 2000
+homeDirectory: /home/zape
+sn: zape
+uid: zape
+uidNumber: 2001
+loginShell: /bin/bash
+userPassword:: e1NTSEF9SzJnVS9yM1BuMUF1dWhVYTlMTzNYRnZjNEpUVmkyMmI=
+
+dn: cn=gemelos,ou=groups,dc=arkaitz,dc=local
+objectClass: posixGroup
+cn: gemelos
+gidNumber: 2000
+memberUid: 
+
+dn: ou=presidentes,dc=arkaitz,dc=local
+objectClass: organizationalUnit
+objectClass: top
+ou: presidentes
+
+dn: cn=america,ou=presidentes,dc=arkaitz,dc=local
+objectClass: posixGroup
+objectClass: top
+cn: america
+gidNumber: 2001
+
+dn: cn=clinton,ou=presidentes,dc=arkaitz,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: clinton
+gidNumber: 2001
+homeDirectory: /home/bill
+sn: Clinton
+uid: bclinton
+uidNumber: 2002
+givenName: Bill
+userPassword:: e01ENX1DRVl0ZENvS2JNWm5uR0QyWlhmQXFnPT0=
+
+dn: cn=trump,ou=presidentes,dc=arkaitz,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: top
+cn: trump
+gidNumber: 2001
+homeDirectory: /home/donald
+sn: Trump
+uid: dtrump
+uidNumber: 2003
+givenName: Donald
+userPassword:: e01ENX0wUEhUaXl1eTJucHlEb0tSNHl4R0dBPT0=
+
+dn: cn=spain,ou=presidentes,dc=arkaitz,dc=local
+objectClass: posixGroup
+objectClass: top
+cn: spain
+gidNumber: 2002
+
+dn: cn=pedro,ou=presidentes,dc=arkaitz,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+cn: pedro
+gidNumber: 2002
+homeDirectory: /home/pedro
+sn: Pedro
+uid: psanchez
+uidNumber: 2004
+userPassword:: e1NTSEF9MjZhQVl2MGJLOGVCUHd1ejlQajFGbXZ2NVE3UkxOZjd1VEZjZGc9P
+ Q==
+
+dn: cn=pablo,ou=presidentes,dc=arkaitz,dc=local
+objectClass: inetOrgPerson
+objectClass: posixAccount
+cn: pablo
+gidNumber: 2002
+homeDirectory: /home/pedro
+sn: Pablo
+uid: piglesias
+uidNumber: 2005
+userPassword:: e1NTSEF9MjZhQVl2MGJLOGVCUHd1ejlQajFGbXZ2NVE3UkxOZjd1VEZjZGc9P
+ Q==
+
