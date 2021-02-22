@@ -1,0 +1,4 @@
+ErrorDocument 404 "Error! Pagina no encontrada"
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://192.168.3.105/$1 [R,L]

@@ -1,0 +1,6 @@
+Options Indexes FollowSymLinks
+AuthType Digest
+AuthName "dominio-ninja"
+AuthDigestProvider file
+AuthUserFile /var/www/html/.htdigest
+Require valid-user
